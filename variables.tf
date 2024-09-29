@@ -15,7 +15,7 @@ variable "instance_type" {
 }
 
 variable "name" {
-  default = "terraform"
+  default = "tfc"
 }
 
 variable "public_ip" {
