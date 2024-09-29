@@ -49,10 +49,10 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-      - name: Terraform Plan
-        id: plan
-        run: terraform plan -no-color
+      #- name: Terraform Plan
+      #  id: plan
+      #  run: terraform plan -no-color
 
-      - name: Terraform Apply
+      - name: Terraform Destroy
         id: apply
-        run: terraform apply --auto-approve -no-color
+        run: terraform destroy --auto-approve -no-color
