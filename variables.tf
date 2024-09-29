@@ -19,4 +19,5 @@ variable "name" {
 }
 
 variable "public_ip" {
+  default = "40.176.246.30/32"
 }

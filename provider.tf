@@ -1,4 +1,10 @@
 terraform {
+  cloud { 
+    organization = "anthony-devoperations" 
+    workspaces { 
+      name = "ec2-sg" 
+    } 
+  } 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
